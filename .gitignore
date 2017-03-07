@@ -1,2 +1,6 @@
+.backup
 .netrwhist
+.swp
+.undo
+
 *.old
