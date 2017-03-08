@@ -9,14 +9,20 @@ A basic vim configuration for developers.
 * Uses [Tomorrow Theme](https://www.google.com) or default
 
 ## Installation
-### Install PlugIn Manager
+### Install Vim Configuration
 ```bash
 $ mkdir -p ~/.vim
 $ cd ~/.vim
 $ git clone https://github.com/mjhenke/vim-config.git
 ```
-Vundle is used as the PlugIn manager and needs to be install before using this vimrc configuration.  To install Vundle follow the commands below.
+### Install Link for Vim
+A link is needed to the `vimrc` file to the default `~/.vimrc` to allow vim to use the new configuration.  If a `~/.vimrc` file already exists, then you should rename it or the following command will fail.
+```bash
+$ ln -s ~/.vim/vimrc ~/.vimrc
+```
+### Install PlugIn Manager
 
+Vundle is used as the PlugIn manager and needs to be install before using this vimrc configuration.  To install Vundle follow the commands below.
 ```bash
 $ cd ~/.vim/bundle
 $ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
