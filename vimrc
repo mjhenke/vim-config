@@ -284,13 +284,13 @@ augroup vimrc-make-cmake
   autocmd BufNewFile,BufRead CMakeLists.txt setlocal filetype=cmake
 augroup END
 
-" vim-javascript
+"" vim-javascript
 augroup vimrc-javascript
   autocmd!
   autocmd FileType javascript set tabstop=4|set shiftwidth=4|set expandtab softtabstop=4
 augroup END
 
-" vim-python
+"" vim-python
 augroup vimrc-python
   autocmd!
   autocmd FileType python setlocal expandtab shiftwidth=4 tabstop=8 colorcolumn=79
@@ -298,11 +298,17 @@ augroup vimrc-python
       \ cinwords=if,elif,else,for,while,try,except,finally,def,class,with
 augroup END
 
+"" vim-ruby
 augroup vimrc-ruby
   autocmd!
   autocmd BufNewFile,BufRead *.rb,*.rbw,*.gemspec setlocal filetype=ruby
   autocmd FileType ruby set tabstop=2|set shiftwidth=2|set expandtab softtabstop=2
 augroup END
+
+"" vim-markdown
+"augroup pandoc_syntax
+"  autocmd! BufNewFile,BufFilePRe,BufRead *.md set filetype=markdown.pandoc
+"augroup END
 
 "*****************************************************************************
 "" -> Key Mappings
@@ -366,20 +372,23 @@ if isdirectory(expand("~/.vim/bundle/Vundle.vim"))
     set rtp+=~/.vim/bundle/Vundle.vim
     call vundle#begin()
 
-    "" https://github.com/VundleVim/Vundle.vim
+    "" vundle: https://github.com/VundleVim/Vundle.vim
     Plugin 'VundleVim/Vundle.vim'
 
     "" vim-pandoc: https://github.com/vim-pandoc/vim-pandoc
-    Plugin 'vim-pandoc/vim-pandoc'
-    Plugin 'vim-pandoc/vim-pandoc-syntax'
+    "Plugin 'vim-pandoc/vim-pandoc'
+    "Plugin 'vim-pandoc/vim-pandoc-syntax'
 
-    "" https://github.com/docker/docker/contrib/syntax/vim
+    "" vim-markdown: https://github.com/gabrielelana/vim-markdown
+    Bundle 'gabrielelana/vim-markdown'
+
+    "" dockerfile.vim: https://github.com/docker/docker/contrib/syntax/vim
     "Plugin 'docker/docker' , {'rtp': '~/.vim/bundle/Dockerfile.vim'}
     Plugin 'ekalinin/Dockerfile.vim'
 
     "" https://github.com/chase/vim-ansible-yaml.git
     "Plugin 'chase/vim-ansible-yaml'
-    "" https://github.com/pearofducks/ansible-vim
+    "" ansible-vim: https://github.com/pearofducks/ansible-vim
     Plugin 'pearofducks/ansible-vim'
 
     "" Provides automatic closing of quotes, parenthesis, brackets, etc.
