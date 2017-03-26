@@ -21,7 +21,6 @@ A link is needed to the `vimrc` file to the default `~/.vimrc` to allow vim to u
 $ ln -s ~/.vim/vimrc ~/.vimrc
 ```
 ### Install PlugIn Manager
-
 Vundle is used as the PlugIn manager and needs to be install before using this vimrc configuration.  To install Vundle follow the commands below.
 ```bash
 $ cd ~/.vim/bundle
@@ -36,3 +35,12 @@ $ wget https://github.com/chriskempson/tomorrow-theme/blob/master/vim/colors/Tom
 $ wget https://github.com/chriskempson/tomorrow-theme/blob/master/vim/colors/Tomorrow-Night-Bright.vim
 ```
 More information on Tomorrow-Theme can be found at their GitHub repo: https://github.com/chriskempson/tomorrow-theme.git
+
+#### License
+MIT
+
+#### Author Information
+Michael Henke
+
+#### Feedback, bug-reports, requests, ...
+Are welcome at https://github.com/mjhenke/vim-config/issues
