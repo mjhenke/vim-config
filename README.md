@@ -36,11 +36,11 @@ $ wget https://github.com/chriskempson/tomorrow-theme/blob/master/vim/colors/Tom
 ```
 More information on Tomorrow-Theme can be found at their GitHub repo: https://github.com/chriskempson/tomorrow-theme.git
 
-#### License
+## License
 MIT
 
-#### Author Information
+## Author Information
 Michael Henke
 
-#### Feedback, bug-reports, requests, ...
+## Feedback, bug-reports, requests, ...
 Are welcome at https://github.com/mjhenke/vim-config/issues
