@@ -1,3 +1,6 @@
+<a name="0.2.0"></a>
+## 0.2.0 (2017-03-26)
+
 9e9309e - Merge branch 'master' of https://github.com/mjhenke/vim-config
 fbeecab - Pandoc/Pandoc_Syntax wasn't working well for Markdown files, so switched to another plugin Added additional comments
 01bf404 - Update README.md
