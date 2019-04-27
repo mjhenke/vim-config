@@ -13,7 +13,7 @@ A basic vim configuration for developers.
 ```bash
 $ mkdir -p ~/.vim
 $ cd ~/.vim
-$ git clone https://github.com/mjhenke/vim-config.git
+$ git clone https://github.com/mjhenke/vim-config.git .
 ```
 ### Install Link for Vim
 A link is needed to the `vimrc` file to the default `~/.vimrc` to allow vim to use the new configuration.  If a `~/.vimrc` file already exists, then you should rename it or the following command will fail.
@@ -30,7 +30,7 @@ More detailed instructions can be found at Vundle GitHub repo: https://github.co
 
 ### Install Color Scheme
 ```bash
-$ cd ~/.vim/color
+$ cd ~/.vim/colors
 $ wget https://github.com/chriskempson/tomorrow-theme/blob/master/vim/colors/Tomorrow.vim
 $ wget https://github.com/chriskempson/tomorrow-theme/blob/master/vim/colors/Tomorrow-Night-Bright.vim
 ```
